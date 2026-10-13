@@ -31,7 +31,7 @@ const ParametreNumerique = ({
           <Input
             placeholder={placeholder}
             variant="bordered"
-            className={"w-fit m-2"}
+            className={"w-fit m-2 ml-0"}
             size={"lg"}
             value={inputValue}
             onValueChange={setInputValue}

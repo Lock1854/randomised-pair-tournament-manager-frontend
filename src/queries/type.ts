@@ -32,5 +32,3 @@ export type Player = {
   aGagne?: boolean;
   roundStreak?: number;
 };
-
-export type TimeWorked = "FULL_DAY" | "HALF_DAY";

@@ -2,6 +2,7 @@ import { NumberInput } from "@heroui/react";
 
 type ParametreProps = {
   description: string;
+  onValueChange: (value: number) => void;
   placeholder?: string;
   defaut?: number;
   unit?: string;
@@ -9,6 +10,7 @@ type ParametreProps = {
 
 const ParametreNumerique = ({
   description,
+  onValueChange,
   placeholder,
   defaut,
   unit,
@@ -19,6 +21,7 @@ const ParametreNumerique = ({
       <NumberInput
         placeholder={placeholder}
         defaultValue={defaut}
+        onValueChange={onValueChange}
         variant="bordered"
         minValue={1}
         maxValue={20}

@@ -8,7 +8,7 @@ export const Route = createFileRoute("/round")({
 function RouteComponent() {
   return (
     <>
-      <PageTitle title={"Résultats"} />
+      <PageTitle title={"Round"} />
     </>
   );
 }
