@@ -16,11 +16,11 @@ import { IoTrashBinOutline } from "react-icons/io5";
 import { deletePlayer } from "../../queries/deleteQueries.tsx";
 import PageSubtitle from "../Layout/PageSubtitle.tsx";
 
-type ActivityTableProps = {
+type PlayersTableProps = {
   tournoiId: string;
 };
 
-const PlayersTable = ({ tournoiId }: ActivityTableProps) => {
+const PlayersTable = ({ tournoiId }: PlayersTableProps) => {
   const queryClient = useQueryClient();
 
   const playersQuery = useQuery({

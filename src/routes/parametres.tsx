@@ -12,6 +12,7 @@ import {
   updateDureeMatch,
   updateNbTerrains,
 } from "../queries/patchQueries.tsx";
+import { tournoiId } from "../constants.ts";
 
 export const Route = createFileRoute("/parametres")({
   component: RouteComponent,
@@ -20,7 +21,6 @@ export const Route = createFileRoute("/parametres")({
 function RouteComponent() {
   const queryClient = useQueryClient();
   const navigate = useNavigate();
-  const tournoiId = "7028e99f-5fd2-4f88-a542-d5c64d49d878";
 
   const { mutate: addPlayer } = useMutation({
     mutationFn: (inputValue: string) => createPlayer(inputValue, tournoiId),

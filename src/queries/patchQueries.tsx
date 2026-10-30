@@ -29,3 +29,10 @@ export async function updateAttente(
   );
   return response.data;
 }
+
+export async function applyVictoire(id: string): Promise<void> {
+  const response = await api.patch(
+    `joueureuse/resultats-match?id=${id}&resultatMatch=gagne`,
+  );
+  return response.data;
+}

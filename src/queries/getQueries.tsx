@@ -6,3 +6,8 @@ export async function getPlayersByTournoi(tournoiId: string) {
   });
   return response.data;
 }
+
+export async function selectPlayers(tournoiId: string) {
+  const response = await api.get(`/round/paires?tournoiId=${tournoiId}`);
+  return response.data;
+}
